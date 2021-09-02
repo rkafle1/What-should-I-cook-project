@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+
+
+ {% block content %}
+<head>
+<h1>What Should I Cook?</h1>
+
+<div class="quizpage-bg"></div> <br>
+</head>
+
+<body>
+<div class= "flex_container">
+  <div class = "form_box" ><form action="{{ url_for("get_results")}}" method="post">
+  <p class="question">What type of cuisine would you like to make?</p>
+  <p class="answers">
+  <input type="radio" id="cuisine" name="cuisine" value="ca">
+  <label for="cuisine1"> Italian</label><br>
+  <input type="radio" id="cuisine2" name="cuisine" value="cb">
+  <label for="cuisine2"> Japanese</label><br>
+  <input type="radio" id="cuisine3" name="cuisine" value="cc">
+  <label for="cuisine3"> Chinese</label><br>
+  <input type="radio" id="cuisine4" name="cuisine" value="cd">
+  <label for="cuisine4"> Indian</label><br>
+  <input type="radio" id="cuisine5" name="cuisine" value="ce">
+  <label for="cuisine5"> American</label><br>
+  <input type="radio" id="cuisine6" name="cuisine" value="cf">
+  <label for="cuisine6"> Mexican</label></p>
+  
+  
+
+  <p class="question">How much time do you have?</p>
+  <p class= "answers">
+  <input type="radio" id="time" name="cook_time" value="ta">
+  <label for="time1"> 0 to 30 minutes</label><br>
+  <input type="radio" id="time2" name="cook_time" value="tb">
+  <label for="time2"> 30 minutes to an hour</label><br>
+  <input type="radio" id="time3" name="cook_time" value="tc">
+  <label for="time3"> 1 to 2 hours</label><br>
+  <input type="radio" id="time4" name="cook_time" value="td">
+  <label for="time4"> 2 hours or more</label><br>
+  </p>
+  
+  <p class="question"> Can't decide?</p>
+  <p class="answers"> 
+  
+  <input type="radio" id="random" name="random" value="random">
+  <label for="random"> Chef's Choices</label>
+  </p>
+  
+  <div class="centered_button"><input class = "button home" type="submit" value= "Submit"></div>
+</form> </div>
+
+<div class="blank_box"></div>
+<div class="text_box">
+<p class="text"> Choose any cuisine and time range to find recipes that work for you. If you only have a certain cuisine or time range in mind, just answer only one of the questions and submit. If you want to try somthing new, you can only click "Chef's Choices" to get 3 random recipies.</p></div> </div>
+</body>
+
+
+ {% endblock %}

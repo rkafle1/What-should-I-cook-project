@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+ {% block content %}
+  <head>
+    <h1>What Should I Cook</h1>
+  </head>
+
+  <body>
+    <div class="results-bg"></div>
+
+    <h2>Recipes:</h2>
+    <p class= "no_results"> {{no_results}}</p>
+    <ol>
+    
+    {%for i in range(0, length)%}  
+        <li><a href="{{ results[i] }}" target="_blank">{{ recipe_name[i]}}</a></li>
+    {%endfor%}
+    </ol>
+      <br>
+      <div class="centered_button" ><button class = "button home"  onclick="document.location='/quizpage'"> Back to Quiz
+      </button></div>
+    
+    
+    
+   
+      
+  </body>
+
+
+ {% endblock %}

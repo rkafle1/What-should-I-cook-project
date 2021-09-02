@@ -1,0 +1,149 @@
+body {
+  background-color: antiquewhite;
+
+}
+
+.home-bg {
+	background-image: url('home.png');
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.quizpage-bg {
+	background-image: url('example.png');
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.results-bg {
+	background-image: url('results.png');
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.button1 {border-style: solid; 
+  background-color: oldlace; 
+  font-size: 25px; 
+  font-weight: bold;
+
+  
+  border: solid;
+  color: black;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  
+  transition-duration: 0.1s;
+  cursor: pointer
+  
+}
+
+h1 {
+  text-align: center; 
+  font-size: 60px; 
+  font-weight: 900;
+  border-bottom: double;
+}
+
+h2 { text-align:center; font-size: 45px
+
+
+}
+
+.homebutton{background-color: oldlace; 
+  color: black; 
+  border: solid black}
+.homebutton:hover{background-color: white; 
+  color: black; 
+  border: solid black}
+.button {
+  background-color: oldlace;
+  border: none;
+  color: grey;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 40px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer
+  ; font-weight: bold
+}
+.home {
+  background-color: oldlace; 
+  color: black; 
+  border: 2px solid black;
+}
+
+.home:hover {
+  background-color: white;
+  color: black;}
+
+.result {
+  background-color: oldlace; 
+  color: black; 
+  border: 2px solid black;
+}
+
+.result:hover {
+  background-color: white;
+  color: black;}
+
+form{
+  
+  border:solid;  padding: 20 px;
+  background-color: oldlace;
+  text-align: left;
+  font-size: 40px
+}
+
+.centered_button {text-align: center; margin:auto}
+
+.text{
+  background-color: oldlace; 
+  border: solid; 
+  font-size: 30px; text-align:center;
+  padding: 10px 10px;
+ 
+  
+}
+
+ol {text-align: left;
+font-size: 40px;
+margin-left: 35%;}
+
+input[type = submit] 
+{font-size: 30px
+; padding: 5px 5px;
+border: solid;
+color: black ; text-align: center; transition-duration: 0.04s;
+}
+
+
+
+.flex_container {
+  display: flex; flex-direction: row; justify-content: left;
+}
+.form_box {
+position: flex; width: 50%; margin-left: 10%;
+}
+.text_box {
+position: flex; width: 30%
+}
+
+.blank_box{
+  position: flex; width: 5%; text-align: center;
+}
+
+.answers{margin-left: 10%}
+.question{margin-left: 10%}
+.no_results{font-size: 20px; text-align: center}
